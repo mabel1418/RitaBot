@@ -7,7 +7,7 @@
         "node": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": "eslint:all",
     "parser": "babel-eslint",
     "rules": {
       // eslint Error
@@ -31,11 +31,11 @@
       // eslint Warn
       "eqeqeq": "warn",
       "no-extra-parens": "warn",
-      "complexity": ["warn", 13],
+      "complexity": ["error", 20],
       "no-multi-spaces": "warn",
       "no-multi-str": "warn",
       "no-unused-expressions": "warn",
-      "no-useless-concat": "warn",
+      "no-useless-concat": "error",
       "no-constant-condition": "error",
       "yoda": "warn",
       "callback-return": "error",
@@ -59,20 +59,20 @@
       "quotes": ["warn", "double", {"allowTemplateLiterals": true}],
       "semi": "warn",
       "semi-spacing": "warn",
-      "space-before-blocks": ["warn", "always"],
+      "space-before-blocks": ["error", "always"]
       "space-in-parens": "warn",
       "wrap-regex": "warn",
       "prefer-const": "warn",
       "template-curly-spacing": "warn",
-      "no-mixed-spaces-and-tabs": "warn",
+      "no-mixed-spaces-and-tabs": "error",
       "no-extra-semi": "warn",
       "no-prototype-builtins": "warn",
-      "no-unreachable": "warn",
+      "no-unreachable": "error",
       // eslint Off
-      "no-unused-vars": "off",
+      "no-unused-vars": "error",
       "block-scoped-var": "off",
-      "no-useless-return": "off",
-      "no-console": "off",
+      "no-useless-return": "error",
+      "no-console": "wsrn",
       "camelcase": "off",
       "no-dupe-keys": "off"
       
