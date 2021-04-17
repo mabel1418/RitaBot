@@ -141,18 +141,6 @@ exports.listen = function(client)
    // Raw events
    // -----------
 
-   client.on("raw", raw =>
-   {
-      // ---------------------
-      // Listen for reactions
-      // ---------------------
-
-      if (raw.t === "MESSAGE_REACTION_ADD")
-      {
-         react(raw.d, client);
-      }
-   });
-
    // ---------------------------
    // Log Client Errors/Warnings
    // ---------------------------
